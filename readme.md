@@ -10,7 +10,7 @@ Projeyi forklayın ve clonlayın. Tamamladığınızda da pushlayın.
 Bu veritabanı, bir okulun kütüphanesinden öğrencilerin aldıkları kitapların bilgisini barındıracak. 
 Aşağıda tablolar ve şemaları verilmiş. 
 
-[ ] Bu tabloların tasarımını online olarak veya bilgisayarınızda bir yazılım kullanarak dizayn ediniz. 
+[ ] Bu tabloların tasarımını online olarak veya bilgisayarınızda bir yazılım kullanarak dizayn ediniz. (örn: [https://drawsql.app/] (https://drawsql.app/)
 [ ] Resim olarak proje dosyasına ekleyiniz.
 
 -- Tablolar 
