@@ -5,7 +5,7 @@
 -- Tablo döküm verisi `islem`
 --
 
-INSERT INTO `islem` (`islemno`, `ogrno`, `kitapno`, `atarih`, `vtarih`) VALUES
+INSERT INTO islem (id, ogrenci_id, kitap_id, atarih, vtarih) VALUES
 (1, 73, 10, '2006-01-01 00:00:00', '2006-01-17 00:00:00'),
 (2, 6, 17, '2006-01-02 00:00:00', '2006-01-07 00:00:00'),
 (3, 59, 11, '2006-01-03 00:00:00', '2006-01-06 00:00:00'),
@@ -1416,7 +1416,7 @@ INSERT INTO `islem` (`islemno`, `ogrno`, `kitapno`, `atarih`, `vtarih`) VALUES
 -- Tablo döküm verisi `kitap`
 --
 
-INSERT INTO `kitap` (`kitapno`, `isbnno`, `kitapadi`, `yazarno`, `turno`, `sayfasayisi`, `puan`) VALUES
+INSERT INTO kitap (id, isbnno, ad, yazar_id, tur_id, sayfasayisi, puan) VALUES
 (1, '253-335-3934-16-4   ', 'Abdülhamidin Kurtlarla Dansı', 26, 3, 368, 22),
 (2, '295-115-3846-25-2   ', 'Ablamı Nereye Kaçırdılar', 6, 1, 220, 27),
 (3, '127-255-2542-27-4   ', 'Anayurttan Anadoluya', 18, 6, 311, 19),
@@ -1469,7 +1469,7 @@ INSERT INTO `kitap` (`kitapno`, `isbnno`, `kitapadi`, `yazarno`, `turno`, `sayfa
 -- Tablo döküm verisi `ogrenci`
 --
 
-INSERT INTO `ogrenci` (`ogrno`, `ograd`, `ogrsoyad`, `cinsiyet`, `dtarih`, `sinif`, `puan`) VALUES
+INSERT INTO ogrenci (id, ad, soyad, cinsiyet, dtarih, sinif, puan) VALUES
 (1, 'Hülya     ', 'Yiğit               ', 'K', '1990-04-08 00:00:00', '10A ', 0),
 (2, 'Niyazi    ', 'Sevinç              ', 'E', '1990-11-11 00:00:00', '9B  ', 0),
 (3, 'İsmail    ', 'Sevinç              ', 'E', '1990-04-17 00:00:00', '10B ', 0),
@@ -1578,14 +1578,14 @@ INSERT INTO `ogrenci` (`ogrno`, `ograd`, `ogrsoyad`, `cinsiyet`, `dtarih`, `sini
 -- Tablo döküm verisi `tur`
 --
 
-INSERT INTO `tur` (`turno`, `turadi`) VALUES
-(1, 'Dram                          '),
-(2, 'Komedi                        '),
-(3, 'Roman                         '),
-(4, 'Hikaye                        '),
-(5, 'Araştırma                     '),
-(6, 'Fıkra                         '),
-(7, 'Deneme                        ');
+INSERT INTO tur (tur_id, ad) VALUES
+(1, 'Dram'),
+(2, 'Komedi'),
+(3, 'Roman'),
+(4, 'Hikaye'),
+(5, 'Araştırma'),
+(6, 'Fıkra'),
+(7, 'Deneme');
 
 -- --------------------------------------------------------
 
@@ -1594,7 +1594,7 @@ INSERT INTO `tur` (`turno`, `turadi`) VALUES
 -- Tablo döküm verisi `yazar`
 --
 
-INSERT INTO `yazar` (`yazarno`, `yazarad`, `yazarsoyad`) VALUES
+INSERT INTO yazar (yazar_id, ad, soyad) VALUES
 (1, 'Leyla               ', 'Çelik               '),
 (2, 'Zeynep              ', 'Emin                '),
 (3, 'Ali                 ', 'Yazar               '),

@@ -1,2 +1,0 @@
--- SQL ifadelerinizi buraya yazınız.
-
